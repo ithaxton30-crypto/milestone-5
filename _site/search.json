@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\nThe dataset on the website contains coral bleaching observations from 1963–2017, with modeled annual bleaching probabilities available for 1985–2017. (https://zenodo.org/records/6780843)"
+  },
+  {
+    "objectID": "tourism.html",
+    "href": "tourism.html",
+    "title": "Global Ocean Region Tourism Analysis",
+    "section": "",
+    "text": "This page compares tourism patterns and travel infrastructure across four major ocean regions: the Caribbean, Indian Ocean, North Atlantic, and Pacific Ocean."
+  },
+  {
+    "objectID": "tourism.html#caribbean-2024-stayover-arrivals-by-destination",
+    "href": "tourism.html#caribbean-2024-stayover-arrivals-by-destination",
+    "title": "Global Ocean Region Tourism Analysis",
+    "section": "1. Caribbean: 2024 Stayover Arrivals by Destination",
+    "text": "1. Caribbean: 2024 Stayover Arrivals by Destination"
+  },
+  {
+    "objectID": "tourism.html#indian-ocean-2025-year-over-year-shifts-in-tourism-metrics",
+    "href": "tourism.html#indian-ocean-2025-year-over-year-shifts-in-tourism-metrics",
+    "title": "Global Ocean Region Tourism Analysis",
+    "section": "2. Indian Ocean: 2025 Year-over-Year Shifts in Tourism Metrics",
+    "text": "2. Indian Ocean: 2025 Year-over-Year Shifts in Tourism Metrics"
+  },
+  {
+    "objectID": "tourism.html#north-atlantic-geographic-distribution-of-travel-hubs",
+    "href": "tourism.html#north-atlantic-geographic-distribution-of-travel-hubs",
+    "title": "Global Ocean Region Tourism Analysis",
+    "section": "3. North Atlantic: Geographic Distribution of Travel Hubs",
+    "text": "3. North Atlantic: Geographic Distribution of Travel Hubs"
+  },
+  {
+    "objectID": "tourism.html#pacific-ocean-pandemic-shock-recovery-in-seat-arrivals-20192022",
+    "href": "tourism.html#pacific-ocean-pandemic-shock-recovery-in-seat-arrivals-20192022",
+    "title": "Global Ocean Region Tourism Analysis",
+    "section": "4. Pacific Ocean: Pandemic Shock & Recovery in Seat Arrivals (2019–2022)",
+    "text": "4. Pacific Ocean: Pandemic Shock & Recovery in Seat Arrivals (2019–2022)"
+  }
+]

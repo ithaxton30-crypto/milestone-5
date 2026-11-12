@@ -3,3 +3,5 @@ title: "About"
 ---
 
 About this site
+
+The dataset on the website contains coral bleaching observations from 1963–2017, with modeled annual bleaching probabilities available for 1985–2017. (https://zenodo.org/records/6780843)
