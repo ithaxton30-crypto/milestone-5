@@ -9,6 +9,8 @@ website:
         text: Home
       - href: tourism.qmd
         text: Tourism
+      - href: interactive.qmd
+        text: Interactive Explorations
       - about.qmd
 
 format:

@@ -1,0 +1,172 @@
+---
+title: "Interactive Explorations"
+format: html
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+library(tidyverse)
+library(leaflet)
+```
+
+## 1. Global Reef Survey Explorer
+
+Use the interactive map below to explore surveyed coral reef sites around the world. You can:
+
+- **Zoom in** by scrolling or clicking numbered clusters to focus on a specific coastline or island group.
+- **Filter by region** using the layer menu in the top-right corner to toggle ocean regions on or off.
+- **Click any reef marker** to pull up its site name, country, survey history, peak coral bleaching percentage, and peak heat stress (Degree Heating Weeks).
+
+```{r}
+# Summarize each unique reef location across its recorded surveys
+reef_sites <- read_csv("data/zenodo_6780843.csv", show_col_types = FALSE) |>
+  filter(
+    !is.na(LATITUDE), !is.na(LONGITUDE),
+    !is.na(OCEAN_REGION),
+    !is.na(PCT_BLEACHED), PCT_BLEACHED >= 0, PCT_BLEACHED <= 100,
+    !is.na(CRW_DHW), CRW_DHW >= 0
+  ) |>
+  # Combine "NA Pacific Ocean" (Eastern Pacific) into "Pacific Ocean" for clean region toggles
+  mutate(
+    region = if_else(OCEAN_REGION == "NA Pacific Ocean", "Pacific Ocean", OCEAN_REGION),
+    site_label = coalesce(SITE_NAME, "Unnamed Reef Site")
+  ) |>
+  summarize(
+    n_surveys = n(),
+    year_range = if_else(
+      min(YEAR) == max(YEAR),
+      as.character(max(YEAR)),
+      paste0(min(YEAR), "–", max(YEAR))
+    ),
+    peak_bleaching = round(max(PCT_BLEACHED), 1),
+    peak_dhw = round(max(CRW_DHW), 1),
+    .by = c(region, COUNTRY, site_label, LATITUDE, LONGITUDE)
+  ) |>
+  # Build the HTML popup shown when a user clicks a marker
+  mutate(
+    popup_info = paste0(
+      "<strong>", htmltools::htmlEscape(site_label), "</strong><br/>",
+      "<strong>Country:</strong> ", htmltools::htmlEscape(coalesce(COUNTRY, "Unknown")), "<br/>",
+      "<strong>Ocean Region:</strong> ", htmltools::htmlEscape(region), "<br/>",
+      "<strong>Survey Years:</strong> ", year_range, " (", n_surveys, " survey", if_else(n_surveys > 1, "s", ""), ")<br/>",
+      "<strong>Peak Bleaching:</strong> ", peak_bleaching, "%<br/>",
+      "<strong>Peak Heat Stress:</strong> ", peak_dhw, " °C-weeks (DHW)"
+    )
+  )
+
+# Color scale from low bleaching (light gold) to severe bleaching (deep red)
+bleach_pal <- colorNumeric(
+  palette = "YlOrRd",
+  domain = c(0, 100)
+)
+
+regions <- sort(unique(reef_sites$region))
+
+# Build interactive map with one toggleable layer per ocean region
+reef_map <- leaflet(options = leafletOptions(preferCanvas = TRUE)) |>
+  addProviderTiles(providers$Esri.WorldTopoMap) |>
+  setView(lng = 20, lat = 5, zoom = 2)
+
+for (reg in regions) {
+  reg_data <- reef_sites |> filter(region == reg)
+  reef_map <- reef_map |>
+    addCircleMarkers(
+      data = reg_data,
+      lng = ~LONGITUDE,
+      lat = ~LATITUDE,
+      radius = 6,
+      stroke = TRUE,
+      color = "#333333",
+      weight = 1,
+      fillColor = ~bleach_pal(peak_bleaching),
+      fillOpacity = 0.85,
+      popup = ~popup_info,
+      label = ~paste0(site_label, " (", peak_bleaching, "% peak bleaching)"),
+      group = reg,
+      clusterOptions = markerClusterOptions()
+    )
+}
+
+reef_map |>
+  addLayersControl(
+    overlayGroups = regions,
+    options = layersControlOptions(collapsed = FALSE)
+  ) |>
+  addLegend(
+    position = "bottomright",
+    pal = bleach_pal,
+    values = c(0, 100),
+    title = "Peak Bleaching (%)",
+    labFormat = labelFormat(suffix = "%"),
+    opacity = 0.9
+  )
+```
+
+## 2. Coral Bleaching Photo Field Guide
+
+Click any reef pin on the map below to view an underwater photograph of coral bleaching taken at that location, along with when it was captured and the marine heatwave event behind it.
+
+```{r}
+# Curated Wikimedia Commons / USGS / NOAA coral bleaching photographs with location and date context
+bleaching_photos <- tribble(
+  ~site, ~region, ~lat, ~lng, ~date_taken, ~img_url, ~context,
+  "Sombrero Key Reef, Florida Keys", "Caribbean / Western Atlantic", 24.6267, -81.1103, "Summer 2023",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Bleached_brain_corals_staghorn_corals_Sombrero_Key_Reef_summer_2023.png/500px-Bleached_brain_corals_staghorn_corals_Sombrero_Key_Reef_summer_2023.png",
+  "Brain corals and staghorn corals bleached white during Florida's record-breaking summer 2023 marine heatwave, when local water temperatures topped 32 °C (90 °F).",
+
+  "Islamorada Reef, Upper Florida Keys", "North Atlantic", 24.9243, -80.6278, "September 6, 2014",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fire_Coral_Bleaching.jpg/500px-Fire_Coral_Bleaching.jpg",
+  "Colonies of blade fire coral documented by USGS divers after losing their symbiotic algae during the back-to-back 2014–2015 subtropical Atlantic warming event.",
+
+  "Maldives Atoll Reef", "Indian Ocean", 4.1755, 73.5093, "December 2, 2006",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Bleached_coral.jpg/500px-Bleached_coral.jpg",
+  "A branching coral colony bleached pale white on a shallow Maldivian lagoon reef following unusually warm Indian Ocean sea surface temperatures.",
+
+  "Andaman Islands, Bay of Bengal", "Indian Ocean", 11.7401, 92.6586, "May 12, 2016",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Bleached_colony_of_Acropora_coral.jpg/500px-Bleached_colony_of_Acropora_coral.jpg",
+  "A table coral (Acropora) colony photographed completely bleached during the peak of the 2015–2016 global El Niño mass bleaching event.",
+
+  "Kapoposang Island, Indonesia", "Pacific Ocean", -4.6969, 118.9567, "August 16, 2018",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Bleaching_Mushroom_Coral.jpg/500px-Bleaching_Mushroom_Coral.jpg",
+  "A solitary mushroom coral showing heat-induced bleaching in the Spermonde Archipelago within the Coral Triangle, Earth's center of marine biodiversity.",
+
+  "Great Barrier Reef, Australia", "Pacific Ocean", -18.2871, 147.6992, "September 28, 2009",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bleached_Staghorn_Coral.jpg/500px-Bleached_Staghorn_Coral.jpg",
+  "Branching staghorn coral on the Great Barrier Reef turned stark white after expelling its photosynthetic zooxanthellae under thermal stress.",
+
+  "Olowalu Reef, Maui, Hawaii", "Pacific Ocean", 20.8086, -156.6236, "October 5, 2015",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Bleached_Porites_lobata_coral_colony.JPG/500px-Bleached_Porites_lobata_coral_colony.JPG",
+  "A large lobe coral (Porites lobata) colony bleached during Hawaii's severe October 2015 El Niño ocean warming event."
+) |>
+  # Format rich HTML card with embedded photo, date, and event context
+  mutate(
+    photo_popup = paste0(
+      "<div style='width:260px;'>",
+      "<strong>", site, "</strong><br/>",
+      "<span style='color:#555; font-size:0.9em;'><strong>Region:</strong> ", region, "<br/>",
+      "<strong>Date Taken:</strong> ", date_taken, "</span>",
+      "<img src='", img_url, "' alt='", site, "' style='width:100%; border-radius:6px; margin:8px 0; display:block;' />",
+      "<p style='margin:0; font-size:0.9em; line-height:1.35;'>", context, "</p>",
+      "</div>"
+    )
+  )
+
+leaflet(bleaching_photos) |>
+  addProviderTiles(providers$Esri.WorldImagery, group = "Satellite Imagery") |>
+  addProviderTiles(providers$Esri.WorldTopoMap, group = "Topographic Map") |>
+  setView(lng = 25, lat = 8, zoom = 2) |>
+  addMarkers(
+    lng = ~lng,
+    lat = ~lat,
+    popup = ~photo_popup,
+    label = ~paste0(site, " (", date_taken, ") — click for photo"),
+    popupOptions = popupOptions(maxWidth = 290)
+  ) |>
+  addLayersControl(
+    baseGroups = c("Satellite Imagery", "Topographic Map"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+```

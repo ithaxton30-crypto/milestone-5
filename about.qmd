@@ -2,6 +2,27 @@
 title: "About"
 ---
 
-About this site
+## What Is Coral Bleaching?
 
-The dataset on the website contains coral bleaching observations from 1963–2017, with modeled annual bleaching probabilities available for 1985–2017. (https://zenodo.org/records/6780843)
+Corals live in a partnership with microscopic algae (zooxanthellae) inside their tissues that give corals their vibrant colors and supply most of their energy through photosynthesis. When corals become stressed—most often by unusually warm water—they expel these algae, turning ghostly white ("bleached"). Bleached corals are not immediately dead, and they can recover if conditions cool down in time, but prolonged bleaching starves them and increases mortality.
+
+## What Is Heat Stress?
+
+Marine heat stress occurs when ocean temperatures stay warmer than the normal hottest summer temperatures corals are adapted to tolerate. Scientists commonly measure accumulated heat stress using **Degree Heating Weeks (DHW, °C-weeks)**, which combines both how hot the water gets above normal summer maximums and how many weeks that warmth lasts. Significant coral bleaching typically begins around 4 °C-weeks, while severe bleaching and mortality become widespread above 8 °C-weeks.
+
+## Importance of Coral Reefs by Ocean Region
+
+- **Caribbean:** Reefs buffer densely populated islands and coastlines from hurricane storm surges and erosion, while sustaining local fisheries and tourism economies across dozens of nations and territories.
+- **Indian Ocean:** Fringing reefs and atoll nations (such as the Maldives and Seychelles) depend directly on reefs for land stability, coastal protection, and subsistence fishing that feeds millions of coastal residents.
+- **North Atlantic:** Subtropical and northern reef systems—such as those around Bermuda, Florida, and the Flower Garden Banks—serve as critical marine biodiversity hotspots, fish nurseries, and potential high-latitude refuges as tropical waters warm.
+- **Pacific Ocean:** Home to the largest expanse of reefs on Earth, including the Coral Triangle and the Great Barrier Reef, Pacific reefs harbor the highest marine biodiversity in the world and underpin food security and cultural traditions across Pacific Island communities.
+
+## Citations and Sources
+
+This website combines global coral bleaching records with regional tourism and travel infrastructure datasets across four major ocean regions:
+
+- **Global Coral Bleaching:** Coral bleaching observations from 1963–2017, with modeled annual bleaching probabilities and heat stress metrics available for 1985–2017 ([Zenodo Record 6780843](https://zenodo.org/records/6780843)).
+- **Caribbean Tourism:** 2024 stayover visitor arrivals and annual growth rates by destination ([Hope Research Group — Caribbean Tourism Statistics 2025](https://www.hoperesearchgroup.com/blog/caribbean-tourism-statistics-2025)).
+- **Indian Ocean Tourism:** 2025 year-over-year changes across headline tourism indicators in India ([India Tourism Data Portal — Ministry of Tourism](https://data.tourism.gov.in/dashboard)).
+- **North Atlantic Travel Infrastructure:** Geographic point-of-reference coordinates for airports, rail stations, and populated travel hubs ([OpenTravelData](https://github.com/opentraveldata/opentraveldata)).
+- **Pacific Ocean Tourism:** 2019–2022 monthly average international airline seat arrivals across Pacific Island destinations ([World Bank Pacific Observatory — Tourism](https://worldbank.github.io/pacific-observatory/tourism/aviation_eda.html)).

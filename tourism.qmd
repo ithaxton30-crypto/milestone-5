@@ -45,6 +45,8 @@ caribbean_data |>
   theme_minimal()
 ```
 
+This chart shows how many stayover visitors each Caribbean destination welcomed in 2024, with the longest bars representing the busiest markets. The color scale highlights each destination’s annual growth rate, so countries with warmer colors were growing faster while cooler ones were expanding more slowly or seeing little change.
+
 ## 2. Indian Ocean: 2025 Year-over-Year Shifts in Tourism Metrics
 
 ```{r}
@@ -84,6 +86,8 @@ indian_data |>
   theme(legend.position = "bottom")
 ```
 
+This chart compares 2025 tourism indicators in India against the previous year, with positive values meaning growth and negative values meaning decline. It suggests that demand is still strong in domestic travel and related economic activity, while foreign arrivals and foreign exchange earnings were weaker than the prior year.
+
 ## 3. North Atlantic: Geographic Distribution of Travel Hubs
 
 ```{r}
@@ -120,6 +124,8 @@ north_atlantic_data |>
   guides(color = guide_legend(override.aes = list(alpha = 1, size = 3)))
 ```
 
+This map shows where the main travel hubs in the North Atlantic are concentrated, with different colors marking airports, rail stations, and cities. The pattern highlights the dense transportation network that connects major destinations and helps explain why travel activity is concentrated around these corridors.
+
 ## 4. Pacific Ocean: Pandemic Shock & Recovery in Seat Arrivals (2019–2022)
 
 ```{r}
@@ -152,3 +158,5 @@ pacific_data |>
   ) +
   theme_minimal()
 ```
+
+This figure shows how international seat arrivals collapsed during the pandemic and then recovered unevenly across Pacific island destinations. The sharp drop in 2020 reflects border closures, while the gradual rebound suggests reopening and renewed travel demand in the region.

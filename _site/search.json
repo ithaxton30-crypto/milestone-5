@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "interactive.html",
+    "href": "interactive.html",
+    "title": "Interactive Explorations",
     "section": "",
-    "text": "About this site\nThe dataset on the website contains coral bleaching observations from 1963–2017, with modeled annual bleaching probabilities available for 1985–2017. (https://zenodo.org/records/6780843)"
+    "text": "Use the interactive map below to explore surveyed coral reef sites around the world. You can:\n\nZoom in by scrolling or clicking numbered clusters to focus on a specific coastline or island group.\nFilter by region using the layer menu in the top-right corner to toggle ocean regions on or off.\nClick any reef marker to pull up its site name, country, survey history, peak coral bleaching percentage, and peak heat stress (Degree Heating Weeks)."
   },
   {
     "objectID": "tourism.html",
@@ -18,27 +18,90 @@
     "href": "tourism.html#caribbean-2024-stayover-arrivals-by-destination",
     "title": "Global Ocean Region Tourism Analysis",
     "section": "1. Caribbean: 2024 Stayover Arrivals by Destination",
-    "text": "1. Caribbean: 2024 Stayover Arrivals by Destination"
+    "text": "1. Caribbean: 2024 Stayover Arrivals by Destination\n\n\n\n\n\n\n\n\n\nThis chart shows how many stayover visitors each Caribbean destination welcomed in 2024, with the longest bars representing the busiest markets. The color scale highlights each destination’s annual growth rate, so countries with warmer colors were growing faster while cooler ones were expanding more slowly or seeing little change."
   },
   {
     "objectID": "tourism.html#indian-ocean-2025-year-over-year-shifts-in-tourism-metrics",
     "href": "tourism.html#indian-ocean-2025-year-over-year-shifts-in-tourism-metrics",
     "title": "Global Ocean Region Tourism Analysis",
     "section": "2. Indian Ocean: 2025 Year-over-Year Shifts in Tourism Metrics",
-    "text": "2. Indian Ocean: 2025 Year-over-Year Shifts in Tourism Metrics"
+    "text": "2. Indian Ocean: 2025 Year-over-Year Shifts in Tourism Metrics\n\n\n\n\n\n\n\n\n\nThis chart compares 2025 tourism indicators in India against the previous year, with positive values meaning growth and negative values meaning decline. It suggests that demand is still strong in domestic travel and related economic activity, while foreign arrivals and foreign exchange earnings were weaker than the prior year."
   },
   {
     "objectID": "tourism.html#north-atlantic-geographic-distribution-of-travel-hubs",
     "href": "tourism.html#north-atlantic-geographic-distribution-of-travel-hubs",
     "title": "Global Ocean Region Tourism Analysis",
     "section": "3. North Atlantic: Geographic Distribution of Travel Hubs",
-    "text": "3. North Atlantic: Geographic Distribution of Travel Hubs"
+    "text": "3. North Atlantic: Geographic Distribution of Travel Hubs\n\n\n\n\n\n\n\n\n\nThis map shows where the main travel hubs in the North Atlantic are concentrated, with different colors marking airports, rail stations, and cities. The pattern highlights the dense transportation network that connects major destinations and helps explain why travel activity is concentrated around these corridors."
   },
   {
     "objectID": "tourism.html#pacific-ocean-pandemic-shock-recovery-in-seat-arrivals-20192022",
     "href": "tourism.html#pacific-ocean-pandemic-shock-recovery-in-seat-arrivals-20192022",
     "title": "Global Ocean Region Tourism Analysis",
     "section": "4. Pacific Ocean: Pandemic Shock & Recovery in Seat Arrivals (2019–2022)",
-    "text": "4. Pacific Ocean: Pandemic Shock & Recovery in Seat Arrivals (2019–2022)"
+    "text": "4. Pacific Ocean: Pandemic Shock & Recovery in Seat Arrivals (2019–2022)\n\n\n\n\n\n\n\n\n\nThis figure shows how international seat arrivals collapsed during the pandemic and then recovered unevenly across Pacific island destinations. The sharp drop in 2020 reflects border closures, while the gradual rebound suggests reopening and renewed travel demand in the region."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Corals live in a partnership with microscopic algae (zooxanthellae) inside their tissues that give corals their vibrant colors and supply most of their energy through photosynthesis. When corals become stressed—most often by unusually warm water—they expel these algae, turning ghostly white (“bleached”). Bleached corals are not immediately dead, and they can recover if conditions cool down in time, but prolonged bleaching starves them and increases mortality."
+  },
+  {
+    "objectID": "about.html#what-is-coral-bleaching",
+    "href": "about.html#what-is-coral-bleaching",
+    "title": "About",
+    "section": "",
+    "text": "Corals live in a partnership with microscopic algae (zooxanthellae) inside their tissues that give corals their vibrant colors and supply most of their energy through photosynthesis. When corals become stressed—most often by unusually warm water—they expel these algae, turning ghostly white (“bleached”). Bleached corals are not immediately dead, and they can recover if conditions cool down in time, but prolonged bleaching starves them and increases mortality."
+  },
+  {
+    "objectID": "about.html#what-is-heat-stress",
+    "href": "about.html#what-is-heat-stress",
+    "title": "About",
+    "section": "What Is Heat Stress?",
+    "text": "What Is Heat Stress?\nMarine heat stress occurs when ocean temperatures stay warmer than the normal hottest summer temperatures corals are adapted to tolerate. Scientists commonly measure accumulated heat stress using Degree Heating Weeks (DHW, °C-weeks), which combines both how hot the water gets above normal summer maximums and how many weeks that warmth lasts. Significant coral bleaching typically begins around 4 °C-weeks, while severe bleaching and mortality become widespread above 8 °C-weeks."
+  },
+  {
+    "objectID": "about.html#importance-of-coral-reefs-by-ocean-region",
+    "href": "about.html#importance-of-coral-reefs-by-ocean-region",
+    "title": "About",
+    "section": "Importance of Coral Reefs by Ocean Region",
+    "text": "Importance of Coral Reefs by Ocean Region\n\nCaribbean: Reefs buffer densely populated islands and coastlines from hurricane storm surges and erosion, while sustaining local fisheries and tourism economies across dozens of nations and territories.\nIndian Ocean: Fringing reefs and atoll nations (such as the Maldives and Seychelles) depend directly on reefs for land stability, coastal protection, and subsistence fishing that feeds millions of coastal residents.\nNorth Atlantic: Subtropical and northern reef systems—such as those around Bermuda, Florida, and the Flower Garden Banks—serve as critical marine biodiversity hotspots, fish nurseries, and potential high-latitude refuges as tropical waters warm.\nPacific Ocean: Home to the largest expanse of reefs on Earth, including the Coral Triangle and the Great Barrier Reef, Pacific reefs harbor the highest marine biodiversity in the world and underpin food security and cultural traditions across Pacific Island communities."
+  },
+  {
+    "objectID": "about.html#citations-and-sources",
+    "href": "about.html#citations-and-sources",
+    "title": "About",
+    "section": "Citations and Sources",
+    "text": "Citations and Sources\nThis website combines global coral bleaching records with regional tourism and travel infrastructure datasets across four major ocean regions:\n\nGlobal Coral Bleaching: Coral bleaching observations from 1963–2017, with modeled annual bleaching probabilities and heat stress metrics available for 1985–2017 (Zenodo Record 6780843).\nCaribbean Tourism: 2024 stayover visitor arrivals and annual growth rates by destination (Hope Research Group — Caribbean Tourism Statistics 2025).\nIndian Ocean Tourism: 2025 year-over-year changes across headline tourism indicators in India (India Tourism Data Portal — Ministry of Tourism).\nNorth Atlantic Travel Infrastructure: Geographic point-of-reference coordinates for airports, rail stations, and populated travel hubs (OpenTravelData).\nPacific Ocean Tourism: 2019–2022 monthly average international airline seat arrivals across Pacific Island destinations (World Bank Pacific Observatory — Tourism)."
+  },
+  {
+    "objectID": "interactive.html#global-reef-survey-explorer",
+    "href": "interactive.html#global-reef-survey-explorer",
+    "title": "Interactive Explorations",
+    "section": "",
+    "text": "Use the interactive map below to explore surveyed coral reef sites around the world. You can:\n\nZoom in by scrolling or clicking numbered clusters to focus on a specific coastline or island group.\nFilter by region using the layer menu in the top-right corner to toggle ocean regions on or off.\nClick any reef marker to pull up its site name, country, survey history, peak coral bleaching percentage, and peak heat stress (Degree Heating Weeks)."
+  },
+  {
+    "objectID": "interactive.html#coral-bleaching-photo-field-guide",
+    "href": "interactive.html#coral-bleaching-photo-field-guide",
+    "title": "Interactive Explorations",
+    "section": "2. Coral Bleaching Photo Field Guide",
+    "text": "2. Coral Bleaching Photo Field Guide\nClick any reef pin on the map below to view an underwater photograph of coral bleaching taken at that location, along with when it was captured and the marine heatwave event behind it."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Global Coral Reef & Bleaching Analysis",
+    "section": "",
+    "text": "This map shows the locations of surveyed coral reef sites, with colors identifying their ocean regions. The distribution gives a global overview of where the dataset’s reef observations were collected.\n\n\n\n\n\n\n\n\n\nEach point compares a reef site’s heat stress (Degree Heating Weeks) with the percentage of coral bleached. The smoothed trend rises, showing that higher accumulated heat stress tends to be associated with more bleaching in these observations."
+  },
+  {
+    "objectID": "index.html#high-resolution-global-mass-coral-bleaching-dataset-v2.0-zenodo.orgrecords6780843",
+    "href": "index.html#high-resolution-global-mass-coral-bleaching-dataset-v2.0-zenodo.orgrecords6780843",
+    "title": "Global Coral Reef & Bleaching Analysis",
+    "section": "",
+    "text": "This map shows the locations of surveyed coral reef sites, with colors identifying their ocean regions. The distribution gives a global overview of where the dataset’s reef observations were collected.\n\n\n\n\n\n\n\n\n\nEach point compares a reef site’s heat stress (Degree Heating Weeks) with the percentage of coral bleached. The smoothed trend rises, showing that higher accumulated heat stress tends to be associated with more bleaching in these observations."
   }
 ]
