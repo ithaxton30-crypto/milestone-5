@@ -11,6 +11,12 @@ execute:
 library(tidyverse)
 ```
 
+::: {layout-ncol=2}
+![On the left, healthy elkhorn coral at Horseshoe Reef in the upper Florida Keys before last summer’s mass bleaching event. And on the right, bleached wild and outplanted staghorn and brain corals at Sombrero Key Reef in the middle Florida Keys in the summer of 2023.](florida-keys2023.png)
+
+![The image above shows a healthy coral compared to a bleached coral. Coral bleaching events have caused a tremendous loss of ocean biodiversity in recent years; the Great Barrier Reef has seen four mass coral bleaching events since 2016.](great-barrier-reef2016.jpg)
+:::
+
 ## High-Resolution Global Mass Coral Bleaching Dataset V2.0 (`zenodo.org/records/6780843`)
 
 ```{r}

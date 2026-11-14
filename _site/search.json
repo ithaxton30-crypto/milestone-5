@@ -74,7 +74,7 @@
     "href": "about.html#citations-and-sources",
     "title": "About",
     "section": "Citations and Sources",
-    "text": "Citations and Sources\nThis website combines global coral bleaching records with regional tourism and travel infrastructure datasets across four major ocean regions:\n\nGlobal Coral Bleaching: Coral bleaching observations from 1963–2017, with modeled annual bleaching probabilities and heat stress metrics available for 1985–2017 (Zenodo Record 6780843).\nCaribbean Tourism: 2024 stayover visitor arrivals and annual growth rates by destination (Hope Research Group — Caribbean Tourism Statistics 2025).\nIndian Ocean Tourism: 2025 year-over-year changes across headline tourism indicators in India (India Tourism Data Portal — Ministry of Tourism).\nNorth Atlantic Travel Infrastructure: Geographic point-of-reference coordinates for airports, rail stations, and populated travel hubs (OpenTravelData).\nPacific Ocean Tourism: 2019–2022 monthly average international airline seat arrivals across Pacific Island destinations (World Bank Pacific Observatory — Tourism)."
+    "text": "Citations and Sources\nThis website combines global coral bleaching records with regional tourism and travel infrastructure datasets across four major ocean regions:\n\nGlobal Coral Bleaching: Coral bleaching observations from 1963–2017, with modeled annual bleaching probabilities and heat stress metrics available for 1985–2017 (Zenodo Record 6780843).\nCaribbean Tourism: 2024 stayover visitor arrivals and annual growth rates by destination (Hope Research Group — Caribbean Tourism Statistics 2025).\nIndian Ocean Tourism: 2025 year-over-year changes across headline tourism indicators in India (India Tourism Data Portal — Ministry of Tourism).\nNorth Atlantic Travel Infrastructure: Geographic point-of-reference coordinates for airports, rail stations, and populated travel hubs (OpenTravelData).\nPacific Ocean Tourism: 2019–2022 monthly average international airline seat arrivals across Pacific Island destinations (World Bank Pacific Observatory — Tourism).\nFlorida Keys Bleaching Image; Credit: Ananda Ellis/NOAA (Climate.gov).\nGreat Barrier Reef Image (Biodiversity Facts)."
   },
   {
     "objectID": "interactive.html#global-reef-survey-explorer",
@@ -95,13 +95,13 @@
     "href": "index.html",
     "title": "Global Coral Reef & Bleaching Analysis",
     "section": "",
-    "text": "This map shows the locations of surveyed coral reef sites, with colors identifying their ocean regions. The distribution gives a global overview of where the dataset’s reef observations were collected.\n\n\n\n\n\n\n\n\n\nEach point compares a reef site’s heat stress (Degree Heating Weeks) with the percentage of coral bleached. The smoothed trend rises, showing that higher accumulated heat stress tends to be associated with more bleaching in these observations."
+    "text": "On the left, healthy elkhorn coral at Horseshoe Reef in the upper Florida Keys before last summer’s mass bleaching event. And on the right, bleached wild and outplanted staghorn and brain corals at Sombrero Key Reef in the middle Florida Keys in the summer of 2023.\n\n\n\n\n\n\n\nThe image above shows a healthy coral compared to a bleached coral. Coral bleaching events have caused a tremendous loss of ocean biodiversity in recent years; the Great Barrier Reef has seen four mass coral bleaching events since 2016."
   },
   {
     "objectID": "index.html#high-resolution-global-mass-coral-bleaching-dataset-v2.0-zenodo.orgrecords6780843",
     "href": "index.html#high-resolution-global-mass-coral-bleaching-dataset-v2.0-zenodo.orgrecords6780843",
     "title": "Global Coral Reef & Bleaching Analysis",
-    "section": "",
-    "text": "This map shows the locations of surveyed coral reef sites, with colors identifying their ocean regions. The distribution gives a global overview of where the dataset’s reef observations were collected.\n\n\n\n\n\n\n\n\n\nEach point compares a reef site’s heat stress (Degree Heating Weeks) with the percentage of coral bleached. The smoothed trend rises, showing that higher accumulated heat stress tends to be associated with more bleaching in these observations."
+    "section": "High-Resolution Global Mass Coral Bleaching Dataset V2.0 (zenodo.org/records/6780843)",
+    "text": "High-Resolution Global Mass Coral Bleaching Dataset V2.0 (zenodo.org/records/6780843)\n\n\n\n\n\n\n\n\n\nThis map shows the locations of surveyed coral reef sites, with colors identifying their ocean regions. The distribution gives a global overview of where the dataset’s reef observations were collected.\n\n\n\n\n\n\n\n\n\nEach point compares a reef site’s heat stress (Degree Heating Weeks) with the percentage of coral bleached. The smoothed trend rises, showing that higher accumulated heat stress tends to be associated with more bleaching in these observations."
   }
 ]

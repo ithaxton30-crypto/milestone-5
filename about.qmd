@@ -26,3 +26,5 @@ This website combines global coral bleaching records with regional tourism and t
 - **Indian Ocean Tourism:** 2025 year-over-year changes across headline tourism indicators in India ([India Tourism Data Portal — Ministry of Tourism](https://data.tourism.gov.in/dashboard)).
 - **North Atlantic Travel Infrastructure:** Geographic point-of-reference coordinates for airports, rail stations, and populated travel hubs ([OpenTravelData](https://github.com/opentraveldata/opentraveldata)).
 - **Pacific Ocean Tourism:** 2019–2022 monthly average international airline seat arrivals across Pacific Island destinations ([World Bank Pacific Observatory — Tourism](https://worldbank.github.io/pacific-observatory/tourism/aviation_eda.html)).
+- **Florida Keys Bleaching Image; Credit: Ananda Ellis/NOAA** ([Climate.gov](https://www.climate.gov/media/16043?utm_source=chatgpt.com)).
+- **Great Barrier Reef Image** ([Biodiversity Facts](https://www.biodiversityfacts.com/biodiversity-loss-in-pictures-observation-of-global-loss-of-biodiversity/)).
